@@ -1,2 +1,198 @@
 .home {
+  .main {
+    margin-top: $header-h;
+    .slider {
+      h3 {
+        font-size: 2.4rem;
+        font-weight: normal;
+      }
+
+      p {
+        margin: 2rem auto 2.5rem;
+        font-weight: bold;
+      }
+    }
+
+    .band {
+      .band-desc {
+        text-align: justify;
+        line-height: 2.25rem;
+
+        font-size: 1.5rem;
+        font-family: "Lato", sans-serif;
+        font-weight: normal;
+      }
+    }
+
+    .artist {
+      @include flex;
+
+      margin-top: 1.5rem;
+      padding: 3.2rem 0;
+
+      &-items {
+        flex: 1;
+        height: 22rem;
+
+        @include flex;
+        flex-direction: column;
+
+        .artist-name {
+          font-family: "Lato", sans-serif;
+          font-weight: normal;
+
+          margin-bottom: 1.5rem;
+        }
+        .artist-img {
+          overflow: hidden;
+          border-radius: 4px;
+
+          @include square(15.5rem);
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .tour {
+      background-color: black;
+
+      .main-title {
+        color: white;
+      }
+
+      .slogan {
+        font-weight: bold;
+      }
+
+      .ticket {
+        background-color: white;
+        margin-bottom: 3.3rem;
+        &-items {
+          padding: 0.8rem 1.6rem;
+
+          text-align: left;
+          border-bottom: 1px solid rgb(218, 218, 218);
+
+          position: relative;
+
+          > span {
+            color: gray;
+          }
+
+          > span.sold-out {
+            margin-left: 1.6rem;
+            padding: 0.2rem 0.8rem;
+
+            color: white;
+            background-color: #f44336;
+          }
+
+          > span.quantity {
+            position: absolute;
+            right: 3.2rem;
+
+            background-color: black;
+            color: white;
+
+            text-align: center;
+            @include square(2.5rem);
+            line-height: 2.5rem;
+
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .location {
+        @include flex;
+        gap: 1.6rem;
+
+        &-items {
+          flex: 1;
+
+          .location-img {
+            background-color: black;
+            opacity: 1;
+
+            &:hover img {
+              cursor: pointer;
+              opacity: 0.7;
+            }
+          }
+
+          .location-infor {
+            min-height: 20.5rem;
+            padding: 1.5rem 1.6rem;
+            background-color: white;
+
+            &-title {
+              font-weight: bold;
+            }
+
+            &-time {
+              color: gray;
+              margin: 1.8rem 0 1.5rem;
+            }
+
+            &-desc {
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      .contact-body {
+        margin: 1.8rem 0 6.4rem;
+        padding: 3.2rem 0;
+        @include flex;
+
+        position: relative;
+
+        .infor {
+          flex: 1;
+
+          font-size: 1.8rem;
+          &-items span {
+            padding-left: 1.6rem;
+          }
+        }
+
+        .contact-form {
+          flex: 1;
+
+          .contact-control {
+            input {
+              width: 100%;
+              min-height: 4.1rem;
+              margin-bottom: 0.8rem;
+              padding: 0 0.8rem;
+
+              border-radius: 5px;
+            }
+          }
+          .control-name {
+            @include flex;
+            gap: 1.6rem;
+
+            input {
+              flex: 1;
+            }
+          }
+
+          .send {
+            position: absolute;
+            right: 0;
+            button {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,16 @@
+.location-btn {
+  height: 4rem;
+  width: 11rem;
+
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  line-height: 2.25rem;
+
+  &:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(187, 187, 187);
+  }
+}
