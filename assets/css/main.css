@@ -3,6 +3,7 @@ html {
   font-size: 62.5%;
   line-height: 1.4;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -98,7 +99,6 @@ button {
   height: 4.6rem;
   line-height: 4.6rem;
   padding: 0 2.4rem;
-  font-size: 1.8rem;
   color: white;
   text-transform: uppercase;
 }
@@ -172,7 +172,7 @@ button {
 .footer .social-items a {
   color: #666;
 }
-.footer > p {
+.footer .copyright {
   text-align: center;
   padding-bottom: 8rem;
 }
@@ -189,6 +189,103 @@ button {
   cursor: pointer;
   color: black;
   background-color: rgb(187, 187, 187);
+}
+
+.modal {
+  margin: 15rem 0;
+}
+.modal .modal-dialog {
+  min-width: 60rem;
+  font-size: 2rem;
+  -webkit-box-shadow: 1px 5px 10px 2px rgba(0, 0, 0, 0.541);
+          box-shadow: 1px 5px 10px 2px rgba(0, 0, 0, 0.541);
+}
+.modal .modal-dialog .modal-header {
+  position: relative;
+  padding: 4.2rem 1.6rem;
+  overflow: hidden;
+  background-color: #009688;
+  color: white;
+}
+.modal .modal-dialog .modal-header .modal-title {
+  margin: 0 auto;
+}
+.modal .modal-dialog .modal-header .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+.modal .modal-dialog .modal-header .btn-close:hover {
+  background-color: rgb(218, 218, 218);
+  color: black;
+}
+.modal .modal-dialog .form-body {
+  padding: 0 1.6rem;
+  font-size: 1.5rem;
+  font-family: "Lato", serif;
+}
+.modal .modal-dialog .form-body .col-form-label {
+  margin: 1rem 0;
+}
+.modal .modal-dialog .form-body .form-control {
+  height: 4rem;
+  font-size: 1.5rem;
+}
+.modal .modal-dialog .form-body .form-control:focus {
+  -webkit-box-shadow: 0 0 2px 1px #009688;
+          box-shadow: 0 0 2px 1px #009688;
+}
+.modal .modal-dialog .form-body .btn-pay {
+  width: 100%;
+  height: 5rem;
+  margin: 1.6rem auto 3.2rem;
+  border-radius: 10px;
+  background: #009688;
+  color: white;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  will-change: background-color, color;
+}
+.modal .modal-dialog .form-body .btn-pay:hover {
+  background-color: rgb(218, 218, 218);
+  color: black;
+}
+.modal .modal-dialog .modal-footer {
+  border-top: none;
+  position: relative;
+  margin: 0 1.6rem;
+  padding: 0 0 1.6rem;
+}
+.modal .modal-dialog .modal-footer .btn-secondary {
+  position: absolute;
+  left: 0;
+  width: 8.5rem;
+  height: 3.5rem;
+  text-align: center;
+  font-family: "Lato", serif;
+  font-size: 1.7rem;
+  border-radius: 0;
+  border: none;
+  color: white;
+  background-color: #f44336;
+}
+.modal .modal-dialog .modal-footer .btn-secondary:hover {
+  background-color: rgb(218, 218, 218);
+  color: black;
+}
+.modal .modal-dialog .modal-footer .help {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.modal .modal-dialog .modal-footer .help > a {
+  text-decoration: underline;
+}
+.modal .modal-dialog .modal-footer .help > a:hover {
+  color: rgb(2, 54, 131);
 }
 
 .home .main {

@@ -62,6 +62,9 @@
 
     <!-- custom -->
     <link rel="stylesheet" href="./assets/css/main.min.css" />
+
+    <!-- javascript  -->
+    <script src="./assets/js/main.js" defer></script>
   </head>
 
   <body>
@@ -219,7 +222,13 @@
                     <div class="location-infor-desc">
                       Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                     </div>
-                    <button class="location-btn">Buy Tickets</button>
+                    <button
+                      class="location-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal"
+                    >
+                      Buy Tickets
+                    </button>
                   </div>
                 </li>
                 <li class="location-items">
@@ -232,7 +241,13 @@
                     <div class="location-infor-desc">
                       Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                     </div>
-                    <button class="location-btn">Buy Tickets</button>
+                    <button
+                      class="location-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal"
+                    >
+                      Buy Tickets
+                    </button>
                   </div>
                 </li>
                 <li class="location-items">
@@ -245,7 +260,13 @@
                     <div class="location-infor-desc">
                       Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                     </div>
-                    <button class="location-btn">Buy Tickets</button>
+                    <button
+                      class="location-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal"
+                    >
+                      Buy Tickets
+                    </button>
                   </div>
                 </li>
               </ul>
@@ -284,7 +305,7 @@
                     <input type="text" placeholder="Name" required />
                     <input type="email" placeholder="Email" required />
                   </div>
-                  <div class="contact-control ">
+                  <div class="contact-control">
                     <input type="text" placeholder="Message" required />
                   </div>
                   <div class="location-btn send">
@@ -332,7 +353,7 @@
               </a>
             </li>
           </ul>
-          <p>
+          <p class="copyright">
             Copyright
             <a
               href="https://github.com/duyvuxx"
@@ -342,6 +363,55 @@
               <b>Duy Vu</b>
             </a>
           </p>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="modal"
+          tabindex="-1"
+          aria-labelledby="modalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="modalLabel">TICKET</h2>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <form id="form_body" class="form-body">
+                <label for="recipient-name" class="col-form-label" name="recipient-many"
+                  >Tickets, $15 per person</label
+                >
+                <input type="text" class="form-control" id="recipient-many" placeholder="How many?"/>
+
+                <label for="recipient-name" class="col-form-label" name="recipient-many"
+                  >Send To</label
+                >
+                <input type="email" class="form-control" id="recipient-many" placeholder="Enter Email"/>
+                
+                <button class="btn-pay">PAY</button>
+              </form>
+              
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <span class="help">Need <a href="!#">help?</a></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
